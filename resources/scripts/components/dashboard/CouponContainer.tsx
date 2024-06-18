@@ -13,7 +13,7 @@ import { ApplicationStore } from '@/state';
 import { httpErrorToHuman } from '@/api/http';
 
 const schema = object().shape({
-    code: string().required('You must specify the code you wish to redeem.'),
+    code: string().required('Пустой промокод не работает ¯\_(ツ)_/¯'),
 });
 
 export default () => {
@@ -35,9 +35,9 @@ export default () => {
     };
 
     return (
-        <PageContentBlock title={'Coupons'}>
-            <h1 className={'text-5xl'}>Coupons</h1>
-            <h3 className={'text-2xl mt-2 text-neutral-500'}>Redeem coupons given to you.</h3>
+        <PageContentBlock title={'Бонусы'}>
+            <h1 className={'text-5xl'}>Бонусы</h1>
+            <h3 className={'text-2xl mt-2 text-neutral-500'}>Здесь ты можешь ввести промокод, который выдаст тебе бонус. Попробуй запросить бонус в тех. поддержке</h3>
             <FlashMessageRender byKey={'coupons'} className={'mt-2'} />
             <ContentBox title={'Redeem'} className={'w-1/4 mt-6'}>
                 <Formik initialValues={{ code: '' }} onSubmit={submit} validationSchema={schema}>
@@ -45,9 +45,9 @@ export default () => {
                         <Fragment>
                             <SpinnerOverlay size={'large'} visible={isSubmitting} />
                             <Form>
-                                <Field id={'code'} type={'text'} name={'code'} label={'Enter Code'} />
+                                <Field id={'code'} type={'text'} name={'code'} label={'Сюда промокод'} />
                                 <div className={'mt-6'}>
-                                    <Button disabled={isSubmitting || !isValid}>Redeem</Button>
+                                    <Button disabled={isSubmitting || !isValid}>Получить свой бонус</Button>
                                 </div>
                             </Form>
                         </Fragment>
