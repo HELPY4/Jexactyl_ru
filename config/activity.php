@@ -8,5 +8,5 @@ return [
     // a part of the server in question will be hidden from the activity logs API response.
     //
     // Activity will still be properly tracked, just not displayed.
-    'hide_admin_activity' => env('APP_ACTIVITY_HIDE_ADMIN', false),
+    'hide_admin_activity' => env('APP_ACTIVITY_HIDE_ADMIN', true),
 ];
