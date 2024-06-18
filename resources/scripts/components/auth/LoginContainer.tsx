@@ -72,13 +72,13 @@ const LoginContainer = ({ history }: RouteComponentProps) => {
             onSubmit={onSubmit}
             initialValues={{ username: '', password: '' }}
             validationSchema={object().shape({
-                username: string().required('Введите что-нибудь'),
+                username: string().required('Введите что-нибудь ¯\_(ツ)_/¯'),
                 password: string().required('Введите пароль'),
             })}
         >
             {({ isSubmitting, setSubmitting, submitForm }) => (
-                <LoginFormContainer title={'Login to ' + name} css={tw`w-full flex`}>
-                    <Field light type={'text'} label={'Ваш ник или электронная почта} name={'username'} disabled={isSubmitting} />
+                <LoginFormContainer title={name + 'Вход'} css={tw`w-full flex`}>
+                    <Field light type={'text'} label={'Имя пользователя или электронная почта} name={'username'} disabled={isSubmitting} />
                     <div css={tw`mt-6`}>
                         <Field light type={'password'} label={'Пароль'} name={'password'} disabled={isSubmitting} />
                     </div>
