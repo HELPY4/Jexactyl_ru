@@ -80,7 +80,7 @@ export default () => {
     };
 
     return (
-        <ServerContentBlock title={'File Manager'} description={'Create, edit and view files.'} showFlashKey={'files'}>
+        <ServerContentBlock title={'Файлы'} description={'Здесь можно взаимодействовать с файлами, даже смотреть на них'} showFlashKey={'files'}>
             <Input onChange={searchFiles} className={'mb-4 j-up'} placeholder={'Search for files and folders...'} />
             <div css={tw`flex flex-wrap-reverse md:flex-nowrap justify-center mb-4`}>
                 <ErrorBoundary>
@@ -104,7 +104,7 @@ export default () => {
                             <UploadButton />
                             <PullFileModal />
                             <NavLink to={`/server/${id}/files/new${window.location.hash}`}>
-                                <Button>New File</Button>
+                                <Button>Создать файл</Button>
                             </NavLink>
                         </div>
                     </Can>
@@ -139,13 +139,14 @@ export default () => {
             <Can action={'file.sftp'}>
                 <TitledGreyBox title={'SFTP Details'} className={'mt-8 md:mt-6'}>
                     <div>
-                        <Label>Server Address</Label>
+                        <Label>Адрес для подключения</Label>
                         <CopyOnClick text={`sftp://${ip(sftp.ip)}:${sftp.port}`}>
-                            <Input type={'text'} value={`sftp://${ip(sftp.ip)}:${sftp.port}`} readOnly />
+                            {/*тут что-то было, смотри офф репозиторий джекса (я случайно удалил)*/}
+                            <Input type={'text'} value={`В Discord сервере`} readOnly />
                         </CopyOnClick>
                     </div>
                     <div css={tw`mt-6`}>
-                        <Label>Username</Label>
+                        <Label>Имя пользователя (супер секретно)</Label>
                         <CopyOnClick text={`${username}.${id}`}>
                             <Input type={'text'} value={`${username}.${id}`} readOnly />
                         </CopyOnClick>
@@ -154,7 +155,7 @@ export default () => {
                         <div css={tw`flex-1`}>
                             <div css={tw`border-l-4 border-cyan-500 p-3`}>
                                 <p css={tw`text-xs text-neutral-200`}>
-                                    Your SFTP password is the same as the password you use to access this panel.
+                                    Пароль для SFTP как у твоей учётной записи в панели.
                                 </p>
                             </div>
                         </div>
