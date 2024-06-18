@@ -153,27 +153,27 @@ const FileDropdownMenu = ({ file }: { file: FileObject }) => {
                 )}
             >
                 <Can action={'file.update'}>
-                    <Row onClick={() => setModal('rename')} title={'Rename'} />
-                    <Row onClick={() => setModal('move')} title={'Move'} />
-                    <Row onClick={() => setModal('chmod')} title={'Permissions'} />
+                    <Row onClick={() => setModal('rename')} title={'Переименовать'} />
+                    <Row onClick={() => setModal('move')} title={'Переместить'} />
+                    <Row onClick={() => setModal('chmod')} title={'Права'} />
                 </Can>
                 {file.isFile && (
                     <Can action={'file.create'}>
-                        <Row onClick={doCopy} title={'Copy'} />
+                        <Row onClick={doCopy} title={'Создать копию'} />
                     </Can>
                 )}
                 {file.isArchiveType() ? (
                     <Can action={'file.create'}>
-                        <Row onClick={doUnarchive} title={'Unarchive'} />
+                        <Row onClick={doUnarchive} title={'Разархивировать'} />
                     </Can>
                 ) : (
                     <Can action={'file.archive'}>
-                        <Row onClick={doArchive} title={'Archive'} />
+                        <Row onClick={doArchive} title={'В архив.tar.gz'} />
                     </Can>
                 )}
-                {file.isFile && <Row onClick={doDownload} title={'Download'} />}
+                {file.isFile && <Row onClick={doDownload} title={'Скачать (быстро)'} />}
                 <Can action={'file.delete'}>
-                    <Row onClick={() => setShowConfirmation(true)} title={'Delete'} $danger />
+                    <Row onClick={() => setShowConfirmation(true)} title={'Удалить'} $danger />
                 </Can>
             </DropdownMenu>
         </>
