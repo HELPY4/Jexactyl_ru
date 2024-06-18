@@ -28,7 +28,7 @@ export default () => {
 
     return (
         <>
-            {width >= 1 ? <SidePanel /> : <MobileNavigation />}
+            {width >= 1280 ? <SidePanel /> : <MobileNavigation />}
             {location.pathname.startsWith('/account') ? (
                 <SubNavigation className={'j-down'}>
                     <div>
