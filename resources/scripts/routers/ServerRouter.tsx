@@ -118,6 +118,7 @@ export default () => {
                                     <div css={tw`flex items-center justify-between`}>
                                         Консоль <Icon.Terminal css={tw`ml-1`} size={18} />
                                     </div>
+                                </NavLink>
                                 <Can action={'file.*'}>
                                     <NavLink to={`${match.url}/files`}>
                                         <div css={tw`flex items-center justify-between`}>
@@ -125,7 +126,6 @@ export default () => {
                                         </div>
                                     </NavLink>
                                 </Can>
-                                </NavLink>
                                 <NavLink to={`${match.url}/analytics`} exact>
                                     <div css={tw`flex items-center justify-between`}>
                                         Аналитика <Icon.BarChart css={tw`ml-1`} size={18} />
