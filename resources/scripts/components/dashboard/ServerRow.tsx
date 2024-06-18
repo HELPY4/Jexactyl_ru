@@ -86,10 +86,10 @@ export default ({ server, className }: { server: Server; className?: string }) =
             $status={stats?.status}
             $bg={server.bg}
         >
-            <div css={tw`hidden col-span-12 w-full sm:flex items-baseline justify-center items-center text-center`}>
+            <div css={tw`col-span-12 w-full sm:flex items-baseline justify-center items-center text-center`}>
                 <div>
                     <p css={tw`text-xl font-medium break-words m-2 text-gray-200`}>{server.name}</p>
-                    <p css={tw`text-sm text-neutral-400 break-words line-clamp-1 mb-2`}>
+                    {/*<p css={tw`text-sm text-neutral-400 break-words line-clamp-1 mb-2`}>
                         {server.allocations
                             .filter((alloc) => alloc.isDefault)
                             .map((allocation) => (
@@ -97,7 +97,7 @@ export default ({ server, className }: { server: Server; className?: string }) =
                                     {allocation.alias || ip(allocation.ip)}:{allocation.port}
                                 </React.Fragment>
                             ))}
-                    </p>
+                    </p>*/}
                 </div>
                 {!stats ||
                     (isSuspended &&
