@@ -28,18 +28,18 @@ export default () => {
 
     return (
         <>
-            {width >= 1280 ? <SidePanel /> : <MobileNavigation />}
+            {width >= 1 ? <SidePanel /> : <MobileNavigation />}
             {location.pathname.startsWith('/account') ? (
                 <SubNavigation className={'j-down'}>
                     <div>
                         <NavLink to={'/account'} exact>
                             <div css={tw`flex items-center justify-between`}>
-                                Account <Icon.User css={tw`ml-1`} size={18} />
+                                Аккаунт <Icon.User css={tw`ml-1`} size={18} />
                             </div>
                         </NavLink>
                         <NavLink to={'/account/security'}>
                             <div css={tw`flex items-center justify-between`}>
-                                Security <Icon.Key css={tw`ml-1`} size={18} />
+                                Безопасность <Icon.Key css={tw`ml-1`} size={18} />
                             </div>
                         </NavLink>
                         {referrals && (
@@ -56,13 +56,13 @@ export default () => {
                         </NavLink>
                         <NavLink to={'/account/ssh'}>
                             <div css={tw`flex items-center justify-between`}>
-                                SSH Keys <Icon.Terminal css={tw`ml-1`} size={18} />
+                                SSH ключи <Icon.Terminal css={tw`ml-1`} size={18} />
                             </div>
                         </NavLink>
                         {coupons && (
                             <NavLink to={'/account/coupons'}>
                                 <div className={'flex items-center justify-between'}>
-                                    Coupons <Icon.DollarSign className={'ml-1'} size={18} />
+                                    Бонусы <Icon.DollarSign className={'ml-1'} size={18} />
                                 </div>
                             </NavLink>
                         )}
