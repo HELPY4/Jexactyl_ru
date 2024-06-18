@@ -23,7 +23,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Jexactyl'),
+    'name' => env('APP_NAME', 'Форк Jexactyl by helpy4'),
 
     /*
     |--------------------------------------------------------------------------
