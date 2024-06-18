@@ -22,8 +22,7 @@ export default () => {
     return (
         <PageContentBlock
             title={'Тех. поддержка'}
-            description={'Здесь можно сообщить о новом аккаунте в Discord'}
-            description2={'В Discord можно быстрее получить ответ ;)'}
+            description={'В Discord можно быстрее получить ответ ;)'}
             showFlashKey={'tickets'}
         >
             <NewTicketDialog open={visible} onClose={() => setVisible(false)} />
