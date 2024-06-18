@@ -21,8 +21,9 @@ export default () => {
 
     return (
         <PageContentBlock
-            title={'Support Tickets'}
-            description={'Create or reply to a support ticket.'}
+            title={'Тех. поддержка'}
+            description={'Здесь можно сообщить о новом аккаунте в Discord'}
+            description2={'В Discord'е можно быстрее получить ответ ;)}
             showFlashKey={'tickets'}
         >
             <NewTicketDialog open={visible} onClose={() => setVisible(false)} />
