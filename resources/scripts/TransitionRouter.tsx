@@ -1,4 +1,4 @@
-import React from 'react';
+limport React from 'react';
 import tw from 'twin.macro';
 import { Route } from 'react-router';
 import styled from 'styled-components/macro';
@@ -18,7 +18,7 @@ const TransitionRouter: React.FC = ({ children }) => {
         <Route
             render={({ location }) => (
                 <StyledSwitchTransition>
-                    <Fade timeout={150} key={location.pathname + location.search} in appear unmountOnExit>
+                    <Fade timeout={250} key={location.pathname + location.search} in appear unmountOnExit>
                         <section>{children}</section>
                     </Fade>
                 </StyledSwitchTransition>
