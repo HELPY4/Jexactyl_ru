@@ -18,7 +18,7 @@ const TransitionRouter: React.FC = ({ children }) => {
         <Route
             render={({ location }) => (
                 <StyledSwitchTransition>
-                    <Fade timeout={250} key={location.pathname + location.search} in appear unmountOnExit>
+                    <Fade timeout={200} key={location.pathname + location.search} in appear unmountOnExit>
                         <section>{children}</section>
                     </Fade>
                 </StyledSwitchTransition>
