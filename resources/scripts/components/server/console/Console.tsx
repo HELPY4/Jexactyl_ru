@@ -94,7 +94,8 @@ export default () => {
         );
 
     const handlePowerChangeEvent = (state: string) =>
-        terminal.writeln(TERMINAL_PRELUDE + 'Server marked as ' + state + '...\u001b[0m');
+        // Процесс т.к. может быть запущен не только Майнкрафт сервер
+        terminal.writeln(TERMINAL_PRELUDE + 'Процесс ' + state + '...\u001b[0m');
 
     const handleCommandKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'ArrowUp') {
