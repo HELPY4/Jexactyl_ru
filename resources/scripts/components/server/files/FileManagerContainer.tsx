@@ -80,7 +80,7 @@ export default () => {
     };
 
     return (
-        <ServerContentBlock title={'Файлы'} description={'Здесь можно взаимодействовать с файлами, даже смотреть на них'} showFlashKey={'files'}>
+        <ServerContentBlock title={'Файлы'} description={'Здесь можно взаимодействовать с файлами'} showFlashKey={'files'}>
             <Input onChange={searchFiles} className={'mb-4 j-up'} placeholder={'Search for files and folders...'} />
             <div css={tw`flex flex-wrap-reverse md:flex-nowrap justify-center mb-4`}>
                 <ErrorBoundary>
