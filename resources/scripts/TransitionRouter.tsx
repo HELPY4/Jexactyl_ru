@@ -1,4 +1,4 @@
-limport React from 'react';
+import React from 'react';
 import tw from 'twin.macro';
 import { Route } from 'react-router';
 import styled from 'styled-components/macro';
