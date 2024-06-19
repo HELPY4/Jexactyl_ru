@@ -29,7 +29,7 @@ export default () => {
                 addFlash({
                     key: 'console:share',
                     type: 'success',
-                    message: 'Your server logs have been saved to the /share folder.',
+                    message: 'Лог консоли сохранён в папку /share.',
                 });
             })
             .catch((error) => {
@@ -50,10 +50,10 @@ export default () => {
     return (
         <>
             {status === 'offline' ? (
-                <span className={'text-gray-400'}>Offline</span>
+                <span className={'text-gray-400'}>Сервер не в сети</span>
             ) : (
                 <div className={'cursor-pointer'} onClick={submit}>
-                    Save
+                    Сохранить
                 </div>
             )}
         </>
