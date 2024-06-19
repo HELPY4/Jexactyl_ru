@@ -38,11 +38,11 @@ const DeleteAllocationButton = ({ allocation }: Props) => {
             <Dialog.Confirm
                 open={confirm}
                 onClose={() => setConfirm(false)}
-                title={'Remove Allocation'}
-                confirm={'Delete'}
+                title={'Отключить порт'}
+                confirm={'Отключить'}
                 onConfirmed={deleteAllocation}
             >
-                This allocation will be immediately removed from your server.
+                Этот порт будет недоступен для сервера/бота и его можно будет восстановить через тех. поддержку или создать новый порт.
             </Dialog.Confirm>
             <Button.Danger
                 variant={Button.Variants.Secondary}
