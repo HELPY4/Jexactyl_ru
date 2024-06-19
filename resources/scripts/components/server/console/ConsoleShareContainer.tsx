@@ -50,7 +50,7 @@ export default () => {
     return (
         <>
             {status === 'offline' ? (
-                <span className={'text-gray-400'}>Сервер не в сети</span>
+                <span className={'text-gray-400'}>Сервер не в сети!</span>
             ) : (
                 <div className={'cursor-pointer'} onClick={submit}>
                     Сохранить
