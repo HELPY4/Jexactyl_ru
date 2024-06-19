@@ -37,8 +37,8 @@ export default () => {
 
     return (
         <ServerContentBlock
-            title={'Databases'}
-            description={'Create databases for your application.'}
+            title={'Базы данных'}
+            description={'Создавай базы данных для своего сервера.'}
             showFlashKey={'databases'}
         >
             {!databases.length && loading ? (
