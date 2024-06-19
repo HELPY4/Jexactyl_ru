@@ -18,6 +18,7 @@ const TransitionRouter: React.FC = ({ children }) => {
         <Route
             render={({ location }) => (
                 <StyledSwitchTransition>
+                    {/*По умолчанию 150. 200 - хороший баланс между 150 и 250*/}
                     <Fade timeout={200} key={location.pathname + location.search} in appear unmountOnExit>
                         <section>{children}</section>
                     </Fade>
