@@ -42,7 +42,7 @@ const DeleteAllocationButton = ({ allocation }: Props) => {
                 confirm={'Отключить'}
                 onConfirmed={deleteAllocation}
             >
-                Этот порт будет недоступен для сервера/бота и его можно будет восстановить через тех. поддержку или создать новый порт.
+                Этот порт станет недоступен для сервера вот это предложение надо изменить. Скорее всего порт не получится восстановить, даже через тех. поддержку.
             </Dialog.Confirm>
             <Button.Danger
                 variant={Button.Variants.Secondary}
