@@ -95,7 +95,7 @@ export default ({ className }: { className?: string }) => {
             </StatBlock>
             <StatBlock icon={faMicrochip} title={'CPU'}>
                 {status === 'offline' ? (
-                    <span className={'text-gray-400'}>Не в сети</span>
+                    <span className={'text-gray-400'}>Сервер оффлайн</span>
                 ) : (
                     <Limit limit={textLimits.cpu}>{stats.cpu.toFixed(2)}%</Limit>
                 )}
@@ -107,7 +107,7 @@ export default ({ className }: { className?: string }) => {
                     <Bar style={{ width: cpuUsed === undefined ? '100%' : `${cpuUsed}%` }} />
                 )}
             </StatBlock>
-            <StatBlock icon={faMemory} title={'Оперативная память!'}>
+            <StatBlock icon={faMemory} title={'ОЗУ'}>
                 {status === 'offline' ? (
                     <span className={'text-gray-400'}>Не в сети</span>
                 ) : (
@@ -121,7 +121,7 @@ export default ({ className }: { className?: string }) => {
                     <Bar style={{ width: memoryUsed === undefined ? '100%' : `${memoryUsed}%` }} />
                 )}
             </StatBlock>
-            <StatBlock icon={faHdd} title={'Дисковое пространство!'}>
+            <StatBlock icon={faHdd} title={'Диск'}>
                 <Limit limit={textLimits.disk}>{bytesToString(stats.disk)}</Limit>
                 {diskUsed > 90 ? (
                     <Bar style={{ width: '100%' }} css={tw`bg-red-500`} />
@@ -131,7 +131,7 @@ export default ({ className }: { className?: string }) => {
                     <Bar style={{ width: diskUsed === undefined ? '100%' : `${diskUsed}%` }} />
                 )}
             </StatBlock>
-            <StatBlock icon={faScroll} title={'Сохранить лог консоли!'}>
+            <StatBlock icon={faScroll} title={'Сохранить лог консоли'}>
                 <ConsoleShareContainer />
             </StatBlock>
             {renewable && (
