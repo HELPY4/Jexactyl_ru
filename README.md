@@ -65,7 +65,7 @@ If you need help at any point during the installation process, please let us kno
 * User approvals, server renewals, and much much more.
 
 ## Sponsors
-*Want to sponsor Jexactyl? [Donate Here.](https://donate.stripe.com/6oE02Zftd9cC34IbIS)*
+*Want to sponsor Jexactyl? А автора перевода?*
 
 | Company | About | Link |
 | ------- | ----- | ------- |
