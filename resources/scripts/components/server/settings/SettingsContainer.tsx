@@ -16,7 +16,7 @@ export default () => {
 
     return (
         <ServerContentBlock
-            title={'Settings'}
+            title={'Настройки'}
             description={'Control important settings for your server.'}
             showFlashKey={'settings'}
         >
