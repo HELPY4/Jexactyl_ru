@@ -7,9 +7,11 @@ _Возможно здесь будет инструкция по установ
 <h1 align="center">Перевод Jexactyl</h1>
 <h5 align="center">
     <strong>
+
 |
+
 |
-|
+
 **Часть страницы Jexactyl на GitHub:**
 
 [![Discord](https://img.shields.io/discord/922284031129825280?style=for-the-badge)](https://discord.com/invite/qttGR4Z5Pk)
