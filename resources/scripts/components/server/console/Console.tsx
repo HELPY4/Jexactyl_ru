@@ -52,7 +52,7 @@ const terminalProps: ITerminalOptions = {
 };
 
 export default () => {
-    const TERMINAL_PRELUDE = '\u001b[1m\u001b[33mJexactyl: \u001b[0m';
+    const TERMINAL_PRELUDE = '\u001b[1m\u001b[33mХостинг helpy4: \u001b[0m';
     const ref = useRef<HTMLDivElement>(null);
     const terminal = useMemo(() => new Terminal({ ...terminalProps }), []);
     const fitAddon = new FitAddon();
@@ -94,8 +94,8 @@ export default () => {
         );
 
     const handlePowerChangeEvent = (state: string) =>
-        // Процесс т.к. может быть запущен не только Майнкрафт сервер
-        terminal.writeln(TERMINAL_PRELUDE + 'Процесс ' + state + '...\u001b[0m');
+        // Процесс т.к. может быть запущен не только Майнкрафт сервер Upd: изменено
+        terminal.writeln(TERMINAL_PRELUDE + 'Сервер ' + state + '...\u001b[0m');
 
     const handleCommandKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'ArrowUp') {
