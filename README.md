@@ -7,6 +7,14 @@ _Возможно здесь будет инструкция по установ
 <h1 align="center">Перевод Jexactyl</h1>
 <h5 align="center">
     <strong>
+       Автор перевода: helpy4
+   </strong>
+</h5>
+|
+
+|
+
+|
 
 |
 
