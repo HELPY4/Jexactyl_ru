@@ -1,4 +1,4 @@
-[![Logo Image](https://cdn.discordapp.com/attachments/1238497742515601439/1253440389000724561/24.png?)](https://)
+[![Logo Image](https://cdn.discordapp.com/attachments/1238497742515601439/1253440389000724561/24.png)](https://)
 
 <h1 align="center">Перевод Jexactyl</h1>
 <h5 align="center">
