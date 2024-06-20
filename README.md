@@ -3,6 +3,15 @@
 **Как установить перевод:**
 _Возможно здесь будет инструкция по установке если перевод станет кому-то интересен._
 
+
+
+
+
+
+
+
+**Часть страницы Jexactyl на GitHub:**
+
 [![Discord](https://img.shields.io/discord/922284031129825280?style=for-the-badge)](https://discord.com/invite/qttGR4Z5Pk)
 ![Downloads - Total](https://img.shields.io/github/downloads/jexactyl/jexactyl/total?style=for-the-badge)
 ![Downloads - Latest](https://img.shields.io/github/downloads/jexactyl/jexactyl/latest/total?style=for-the-badge)
