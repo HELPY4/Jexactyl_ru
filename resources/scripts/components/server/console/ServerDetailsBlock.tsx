@@ -131,7 +131,7 @@ export default ({ className }: { className?: string }) => {
                     <Bar style={{ width: diskUsed === undefined ? '100%' : `${diskUsed}%` }} />
                 )}
             </StatBlock>
-            <StatBlock icon={faScroll} title={'Сохранить лог консоли!}>
+            <StatBlock icon={faScroll} title={'Сохранить лог консоли!'}>
                 <ConsoleShareContainer />
             </StatBlock>
             {renewable && (
