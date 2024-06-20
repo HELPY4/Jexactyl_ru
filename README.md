@@ -7,7 +7,7 @@ _Возможно здесь будет инструкция по установ
 <h1 align="center">Перевод Jexactyl</h1>
 <h5 align="center">
     <strong>
-/r
+/n
 /r
 /r
 /r
