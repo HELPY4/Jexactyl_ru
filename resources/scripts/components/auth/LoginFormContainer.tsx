@@ -1,3 +1,4 @@
+{/*Это файл из версии Jexactyl 3.7.2 т.к. в 3.7.3 был убран логотип.*/}
 import tw from 'twin.macro';
 import { Form } from 'formik';
 import { breakpoint } from '@/theme';
