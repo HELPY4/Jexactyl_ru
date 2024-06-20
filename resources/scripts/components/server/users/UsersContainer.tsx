@@ -48,7 +48,7 @@ export default () => {
 
     return (
         <ServerContentBlock
-            title={'Users'}
+            title={'Команда'}
             description={'Add and remove users from your server.'}
             showFlashKey={'users'}
         >
