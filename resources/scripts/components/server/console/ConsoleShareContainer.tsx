@@ -23,8 +23,8 @@ export default () => {
 
         const data = stripAnsi(log.map((it) => it.replace('\r', '')).join('\n')) || '';
 
-        {/*Добавил toLocaleDateString для даты + время, а не просто время (так удобнее)*/}
-        saveFileContents(uuid, '/share/console-' + new Date().toLocaleDateString() + new Date().toLocaleTimeString() + '.txt', data)
+        {/*Добавил toLocaleDateString для даты + пробел + время, а не просто время (так удобнее)*/}
+        saveFileContents(uuid, '/share/console-' + new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString() + '.txt', data)
             .then(() => {
                 addFlash({
                     key: 'console:share',
