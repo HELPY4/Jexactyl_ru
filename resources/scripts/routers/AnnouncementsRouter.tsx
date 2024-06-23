@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, RouteComponentProps, Switch } from 'react-router-dom';
 import MobileNavigation from '@/components/elements/MobileNavigation';
-import NotFound from '@/components/screens/NotFound';
 import TransitionRouter from '@/TransitionRouter';
 import AnnouncementsContainer from '@/components/dashboard/announcements/AnnouncementsContainer';
 
