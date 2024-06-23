@@ -79,7 +79,8 @@ export default () => {
                     )}
                     {store && (
                         <NavLink to={'/announcements'}>
-                            <Icon.faInbox size={20} />
+{/*Сейчас иконка тикетов вместо нужной*/}
+                            <Icon.HelpCircle size={20} />
                         </NavLink>
                     )}
                     {tickets && (
