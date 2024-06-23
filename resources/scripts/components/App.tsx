@@ -11,6 +11,7 @@ import earnCredits from '@/api/account/earnCredits';
 import { setupInterceptors } from '@/api/interceptors';
 import { StorefrontSettings } from '@/state/storefront';
 import GlobalStylesheet from '@/assets/css/GlobalStylesheet';
+import AnnouncementsRouter from '@/routers/AnnouncementsRouter';
 
 interface ExtendedWindow extends Window {
     SiteConfiguration?: SiteSettings;
