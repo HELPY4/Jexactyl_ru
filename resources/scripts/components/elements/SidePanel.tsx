@@ -8,6 +8,7 @@ import { NavLink, Link } from 'react-router-dom';
 import ProgressBar from '@/components/elements/ProgressBar';
 import Tooltip from '@/components/elements/tooltip/Tooltip';
 import SearchContainer from '@/components/dashboard/search/SearchContainer';
+import AnnouncementsRouter from '@/routers/AnnouncementsRouter';
 
 export default () => {
     const logo = useStoreState((state) => state.settings.data?.logo);
