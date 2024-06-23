@@ -1,12 +1,12 @@
 <?php
 
-namespace je;
+namespace Jexactyl\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 use Prologue\Alerts\AlertsMessageBag;
-use Pterodactyl\Http\Controllers\Controller;
+use Jexactyl\Http\Controllers\Controller;
 
 class AnnouncementsController extends Controller
 {
