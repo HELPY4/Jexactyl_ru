@@ -296,3 +296,22 @@ Route::group(['prefix' => 'nests'], function () {
     Route::delete('/egg/{egg:id}', [Admin\Nests\EggController::class, 'destroy']);
     Route::delete('/egg/{egg:id}/variables/{variable:id}', [Admin\Nests\EggVariableController::class, 'destroy']);
 });
+
+/*
+|--------------------------------------------------------------------------
+| Announcements Controller Routes
+|--------------------------------------------------------------------------
+|
+| Endpoint: /admin/announcements
+|
+*/
+Route::group(['prefix' => 'announcements'], function () {
+    Route::get('/', 'AnnouncementsController@index')->name('admin.announcements');
+    Route::get('/new', 'AnnouncementsController@create')->name('admin.announcements.new');
+    Route::get('/edit/{id}', 'AnnouncementsController@edit')->name('admin.announcements.edit');
+
+    Route::post('/new', 'AnnouncementsController@new')->name('admin.announcements.create');
+    Route::post('/edit/{id}', 'AnnouncementsController@update')->name('admin.announcements.update');
+
+    Route::delete('/delete', 'AnnouncementsController@delete')->name('admin.announcements.delete');
+});
