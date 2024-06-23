@@ -77,6 +77,15 @@ export default () => {
                         </Tooltip>
                     </NavLink>
                 )}
+                {announcements && (
+                    <NavLink to={'/announcements'} className={'navigation-link'}>
+                        <Tooltip placement={'bottom'} content={'Announcements'}>
+                            <div className={'bg-gray-700 rounded-lg p-2 my-8'}>
+                                <Icon.HelpCircle size={32} />
+                            </div>
+                        </Tooltip>
+                    </NavLink>
+                )}
                 {tickets && (
                     <NavLink to={'/tickets'} className={'navigation-link'}>
                         <Tooltip placement={'bottom'} content={'Tickets'}>
