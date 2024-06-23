@@ -11,13 +11,11 @@ import DashboardRouter from '@/routers/DashboardRouter';
 import AuthenticationRouter from '@/routers/AuthenticationRouter';
 import { NotApproved, NotFound } from '@/components/elements/ScreenBlock';
 import AuthenticatedRoute from '@/components/elements/AuthenticatedRoute';
-import AnnouncementsRouter from '@/routers/AnnouncementsRouter';
 
 export default () => {
     const authenticated = useStoreState((state) => state.user?.data);
     const approved = useStoreState((state) => state.user.data?.approved);
     const store = useStoreState((state) => state.storefront.data!.enabled);
-    const announcements = useStoreState((state) => state.announcements?.data);
     const tickets = useStoreState((state) => state.settings.data!.tickets);
     const approvals = useStoreState((state) => state.settings.data!.approvals);
 
@@ -52,10 +50,6 @@ export default () => {
                         </Spinner.Suspense>
                     </AuthenticatedRoute>
                 )}
-                {announcements && (
-                    <AuthenticatedRoute path={'/announcements'}>
-                        <Spinner.Suspense>
-                            <AnnouncementsRouter />
                         </Spinner.Suspense>
                     </AuthenticatedRoute>
                 )}
