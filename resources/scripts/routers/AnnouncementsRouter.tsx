@@ -10,7 +10,7 @@ export default ({ location }: RouteComponentProps) => (
         <TransitionRouter>
             <Switch location={location}>
                 <Route path={'/announcements'} component={AnnouncementsContainer} exact/>
-                <Route path={'*'} component={NotFound}/>
+                //<Route path={'*'} component={NotFound}/> Надо взять из IndexRouter.tsx
             </Switch>
         </TransitionRouter>
     </>
