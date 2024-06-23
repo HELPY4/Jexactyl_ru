@@ -7,7 +7,7 @@ import AnnouncementsContainer from '@/components/dashboard/announcements/Announc
 
 export default ({ location }: RouteComponentProps) => (
     <>
-        <NavigationBar/>
+        <MobileNavigation/>
         <TransitionRouter>
             <Switch location={location}>
                 <Route path={'/announcements'} component={AnnouncementsContainer} exact/>
