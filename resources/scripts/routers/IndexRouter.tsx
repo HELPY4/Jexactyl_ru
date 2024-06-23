@@ -50,9 +50,6 @@ export default () => {
                         </Spinner.Suspense>
                     </AuthenticatedRoute>
                 )}
-                        </Spinner.Suspense>
-                    </AuthenticatedRoute>
-                )}
                 {tickets && (
                     <AuthenticatedRoute path={'/tickets'}>
                         <Spinner.Suspense>
