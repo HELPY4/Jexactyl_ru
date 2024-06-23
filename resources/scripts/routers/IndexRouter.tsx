@@ -1,3 +1,4 @@
+// Пельмени
 import React from 'react';
 import { useStoreState } from '@/state/hooks';
 import { ServerContext } from '@/state/server';
