@@ -67,7 +67,7 @@ const MassActionsBar = () => {
                     {loadingMessage}
                 </SpinnerOverlay>
                 <Dialog.Confirm
-                    {/*По умолчанию Delete Files (см. репозиторий Jexactyl)*/}
+                    // По умолчанию Delete Files (см. репозиторий Jexactyl)
                     title={'Удаление файлов'}
                     open={showConfirm}
                     confirm={'Удалить'}
