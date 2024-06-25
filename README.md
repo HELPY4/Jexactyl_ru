@@ -1,5 +1,3 @@
-Система новостей.
-
 [![Logo Image](https://cdn.discordapp.com/attachments/1238497742515601439/1253440389000724561/24.png?ex=6675dcd4&is=66748b54&hm=69271263a6023e12be36398e1bf07841efafd5cb4c4b2e096cfc8c41603bb076&)](https://)
 
 <h1 align="center">Перевод Jexactyl</h1>
