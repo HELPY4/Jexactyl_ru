@@ -49,13 +49,21 @@
 1) Прочитайте всё, что написано выше. Это важно.
 2) Создайте бэкап сервера! За все следущие действия отвечаете только Вы.
 3) Скопируйте репозиторий в Вашу папку с установленным Jexactyl (обычно это /var/www/jexactyl):
+
 `sudo apt install git` если не установлен git
+
 `cd /var/www/jexactyl` Перемещение в папку Jexactyl
+
 `git clone https://github.com/HELPY4/Jexactyl_ru` Копирование перевода в папку Jexactyl_ru
+
 `cd Jexactyl_ru` Перемещение в папку Jexactyl_ru (здесь можно написать `cd J` и нажать Tab)
+
 `sudo cp -r * /var/www/jexactyl` Копирование файлов. `-r` копирует все файлы и папки, что находятся в текущей папке
+
 `cd ..` Возвращение в /var/www/jexactyl
-`rm -r Jexactyl_ru` Удаление папки Jexactyl_ru. Это довольно важно.
+
+`rm -r Jexactyl_ru` Удаление папки Jexactyl_ru. Это нужно сделать для избежания ошибки git во время копирования перевода "Папка Jexactyl_ru не пуста".
+
 4) Установите yarn (см. docs.jexactyl.com), но не "билдьте" панель.
 5) Теперь нужно установить несколько новых фич. Для этого выполните `php artisan migrate`.
 6) `sudo yarn build:production`
