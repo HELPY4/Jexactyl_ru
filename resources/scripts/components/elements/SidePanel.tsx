@@ -78,7 +78,6 @@ export default () => {
                         </Tooltip>
                     </NavLink>
                 )}
-                // Эксперимент. Тикеты должны быть включены (не проверено)
                 {tickets && (
                     <NavLink to={'/announcements'} className={'navigation-link'}>
                         <Tooltip placement={'bottom'} content={'Announcements'}>
