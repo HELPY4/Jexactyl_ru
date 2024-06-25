@@ -5,6 +5,7 @@
 <h1 align="center">Перевод Jexactyl</h1>
 <h5 align="center">
     <strong>
+
        Автор перевода: helpy4
 
        Последнее обновление: 23 июня
