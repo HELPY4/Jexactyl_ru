@@ -77,7 +77,7 @@ export default () => {
                             <Icon.ShoppingCart size={20} />
                         </NavLink>
                     )}
-                    {store && (
+                    {tickets && (
                         <NavLink to={'/announcements'}>
 {/*Сейчас иконка тикетов вместо нужной*/}
                             <Icon.HelpCircle size={20} />
