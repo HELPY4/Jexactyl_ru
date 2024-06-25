@@ -79,8 +79,8 @@ export default () => {
                     </NavLink>
                 )}
                 {tickets && (
-                    <NavLink to={'/announcements'} className={'navigation-link'}>
-                        <Tooltip placement={'bottom'} content={'Announcements'}>
+                    <NavLink to={'/tickets'} className={'navigation-link'}>
+                        <Tooltip placement={'bottom'} content={'Tickets'}>
                             <div className={'bg-gray-700 rounded-lg p-2 my-8'}>
                                 <Icon.HelpCircle size={32} />
                             </div>
@@ -88,8 +88,8 @@ export default () => {
                     </NavLink>
                 )}
                 {tickets && (
-                    <NavLink to={'/tickets'} className={'navigation-link'}>
-                        <Tooltip placement={'bottom'} content={'Tickets'}>
+                    <NavLink to={'/announcements'} className={'navigation-link'}>
+                        <Tooltip placement={'bottom'} content={'Announcements'}>
                             <div className={'bg-gray-700 rounded-lg p-2 my-8'}>
                                 <Icon.HelpCircle size={32} />
                             </div>
