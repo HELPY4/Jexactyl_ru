@@ -10,6 +10,7 @@ import { NavLink } from 'react-router-dom';
 import SpinnerOverlay from '@/components/elements/SpinnerOverlay';
 import SearchContainer from '@/components/dashboard/search/SearchContainer';
 import AnnouncementsRouter from '@/routers/AnnouncementsRouter';
+import ProgressBar from '@/components/elements/ProgressBar';
 
 const Navigation = styled.div`
     ${tw`w-full bg-neutral-800 shadow-xl overflow-x-auto`};
@@ -60,6 +61,7 @@ export default () => {
 
     return (
         <Navigation>
+            <ProgressBar />
             <SpinnerOverlay visible={isLoggingOut} />
             <div
                 css={tw`mx-auto w-full flex justify-center items-center`}
