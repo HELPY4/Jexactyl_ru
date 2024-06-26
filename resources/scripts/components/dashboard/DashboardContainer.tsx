@@ -70,7 +70,7 @@ export default () => {
                     </>
                 ) : (
                     <div>
-                        <h1 className={'text-5xl'}>Привет, {username} 🤗</h1>
+                        <h1 className={'text-5xl'}>Привет, {username} 👋</h1>
                         <h3 className={'text-2xl mt-2 text-neutral-500'}>
                             Это новый перевод панели! (WIP)
                         </h3>
