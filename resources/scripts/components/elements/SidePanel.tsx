@@ -91,7 +91,7 @@ export default () => {
                     <NavLink to={'/announcements'} className={'navigation-link'}>
                         <Tooltip placement={'bottom'} content={'Announcements'}>
                             <div className={'bg-gray-700 rounded-lg p-2 my-8'}>
-                                <Icon.fa-inbox size={32} />
+                                <Icon.HelpCircle size={32} />
                             </div>
                         </Tooltip>
                     </NavLink>
