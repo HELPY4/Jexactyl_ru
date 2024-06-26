@@ -62,7 +62,7 @@
 
 `cd ..` Возвращение в /var/www/jexactyl
 
-`sudo rm -r Jexactyl_ru` Удаление папки Jexactyl_ru. Это нужно сделать для избежания ошибки git во время копирования перевода "Папка Jexactyl_ru не пуста".
+`sudo rm -r Jexactyl_ru` Удаление папки Jexactyl_ru. Это нужно сделать для избежания ошибки git во время копирования перевода "Папка Jexactyl_ru уже существует и не пуста".
 
 4) Установите yarn (см. docs.jexactyl.com), но не "билдьте" панель.
 5) `sudo yarn build:production`
