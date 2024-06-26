@@ -1,5 +1,6 @@
 <?php
 
+// Нужно подумать над оформлением: Запустил(а) сервер или Запуск сервера
 /**
  * Contains all of the translation strings for different activity log
  * events. These should be keyed by the value in front of the colon (:)
@@ -44,14 +45,14 @@ return [
     ],
 
     'server' => [
-        'reinstall' => 'Reinstalled server',
+        'reinstall' => 'Переустановка сервера',
         'console' => [
             'command' => 'Executed ":command" on the server',
         ],
         'power' => [
-            'start' => 'Started the server',
-            'stop' => 'Stopped the server',
-            'restart' => 'Restarted the server',
+            'start' => 'Запуск сервера',
+            'stop' => 'Выключение сервера',
+            'restart' => 'Перезапуск сервера',
             'kill' => 'Killed the server process',
         ],
         'backup' => [
