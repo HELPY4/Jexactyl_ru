@@ -85,10 +85,10 @@ export default () => {
                             <Icon.HelpCircle size={20} />
                         </NavLink>
                     )}
-                    {tickets && (
+                    {announcements && (
                         <NavLink to={'/announcements'}>
 {/*Сейчас иконка тикетов вместо нужной*/}
-                            <Icon.fa-inbox size={20} />
+                            <Icon.HelpCircle size={20} />
                         </NavLink>
                     )}
                     {rootAdmin && (
