@@ -55,13 +55,13 @@ export default () => {
                     <AuthenticatedRoute path={'/tickets'}>
                         <Spinner.Suspense>
                             <TicketRouter />
+                        </Spinner.Suspense>
+                    </AuthenticatedRoute>
+                )}
                 {tickets && (
                     <AuthenticatedRoute path={'/announcements'}>
                         <Spinner.Suspense>
                             <TicketRouter />
-                        </Spinner.Suspense>
-                    </AuthenticatedRoute>
-                )}
                         </Spinner.Suspense>
                     </AuthenticatedRoute>
                 )}
