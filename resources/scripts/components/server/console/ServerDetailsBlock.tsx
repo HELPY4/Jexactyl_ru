@@ -83,7 +83,7 @@ export default ({ className }: { className?: string }) => {
         <div className={classNames('grid grid-cols-6 gap-2 md:gap-4', className)}>
             <StatBlock icon={faClock} title={'Аптайм'}>
                 {status === null ? (
-                    'Не в сети'
+                    'Сервер офлайн'
                 ) : stats.uptime > 0 ? (
                     <UptimeDuration uptime={stats.uptime / 1000} />
                 ) : (
@@ -95,7 +95,7 @@ export default ({ className }: { className?: string }) => {
             </StatBlock>
             <StatBlock icon={faMicrochip} title={'CPU'}>
                 {status === 'offline' ? (
-                    <span className={'text-gray-400'}>Сервер оффлайн</span>
+                    <span className={'text-gray-400'}>Сервер офлайн</span>
                 ) : (
                     <Limit limit={textLimits.cpu}>{stats.cpu.toFixed(2)}%</Limit>
                 )}
@@ -109,7 +109,7 @@ export default ({ className }: { className?: string }) => {
             </StatBlock>
             <StatBlock icon={faMemory} title={'ОЗУ'}>
                 {status === 'offline' ? (
-                    <span className={'text-gray-400'}>Не в сети</span>
+                    <span className={'text-gray-400'}>Сервер офлайн</span>
                 ) : (
                     <Limit limit={textLimits.memory}>{bytesToString(stats.memory)}</Limit>
                 )}
