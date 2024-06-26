@@ -50,17 +50,17 @@ export default () => {
     }, [error]);
 
     return (
-        <PageContentBlock title={'Dashboard'} css={tw`mt-4 sm:mt-10`} showFlashKey={'dashboard'}>
+        <PageContentBlock title={'Хостинг helpy4'} css={tw`mt-4 sm:mt-10`} showFlashKey={'dashboard'}>
             <div css={tw`mb-10 flex justify-between items-center`}>
                 {rootAdmin ? (
                     <>
                         <div>
                             <h1 className={'text-5xl'}>
-                                {showOnlyAdmin ? 'Showing other servers' : 'Showing your servers'}
+                                {showOnlyAdmin ? 'Это другие сервера' : 'Это твои сервера'}
                             </h1>
-                            <h3 className={'text-2xl mt-2 text-neutral-500'}>
+                            {/*<h3 className={'text-2xl mt-2 text-neutral-500'}>
                                 Select a server to view, update or modify.
-                            </h3>
+                            </h3>*/}
                         </div>
                         <Switch
                             name={'show_all_servers'}
@@ -70,7 +70,7 @@ export default () => {
                     </>
                 ) : (
                     <div>
-                        <h1 className={'text-5xl'}>Привет, {username} 👋</h1>
+                        <h1 className={'text-5xl'}>Привет, {username} 🤗</h1>
                         <h3 className={'text-2xl mt-2 text-neutral-500'}>
                             Это новый перевод панели! (WIP)
                         </h3>
