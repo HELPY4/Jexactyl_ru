@@ -129,7 +129,7 @@ const FileDropdownMenu = ({ file }: { file: FileObject }) => {
                 ref={onClickRef}
                 renderToggle={(onClick) => (
                     <div css={tw`px-4 py-2 hover:text-white`} onClick={onClick}>
-                        <Icon.MoreHorizontal />
+                        {/*<Icon.MoreHorizontal /> уменьшение ширины dropdown menu (есть излишек)*/}
                         {modal ? (
                             modal === 'chmod' ? (
                                 <ChmodFileModal
@@ -164,7 +164,7 @@ const FileDropdownMenu = ({ file }: { file: FileObject }) => {
                 )}
                 {file.isArchiveType() ? (
                     <Can action={'file.create'}>
-                        <Row onClick={doUnarchive} title={'Разархивировать'} />
+                        <Row onClick={doUnarchive} title={'Распаковать'} />
                     </Can>
                 ) : (
                     <Can action={'file.archive'}>
