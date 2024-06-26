@@ -85,7 +85,7 @@ export default () => {
                             <Icon.HelpCircle size={20} />
                         </NavLink>
                     )}
-                    {announcements && (
+                    {tickets && (
                         <NavLink to={'/announcements'}>
 {/*Сейчас иконка тикетов вместо нужной*/}
                             <Icon.HelpCircle size={20} />
