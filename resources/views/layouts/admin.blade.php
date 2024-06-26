@@ -51,6 +51,7 @@
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.announcements') ?: 'active' }}">
                             <a href="{{ route('admin.announcements')}}">
                                 <i data-feather="help-circle" style="margin-left: 12px;"></i>
+<i class="fa fa-inbox"></i>
                             </a>
                         </li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.tickets') ?: 'active' }}">
