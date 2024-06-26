@@ -19,7 +19,7 @@
     @apply hover:text-neutral-100 hover:bg-neutral-700 transition delay-100;
 
     & > .details {
-        @apply flex flex-1 items-center text-neutral-300 no-underline px-4 py-2 overflow-hidden truncate;
+        @apply flex flex-100 items-center text-neutral-300 no-underline px-4 py-2 overflow-hidden truncate;
 
         &:not(a) {
             @apply cursor-default;
