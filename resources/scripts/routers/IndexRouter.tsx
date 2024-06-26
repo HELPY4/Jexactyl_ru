@@ -60,9 +60,7 @@ export default () => {
                 )}
                 {announcements && (
                     <AuthenticatedRoute path={'/announcements'}>
-                        <Spinner.Suspense>
-                            <AnnouncementsRouter />
-                        </Spinner.Suspense>
+                        <AnnouncementsRouter />
                     </AuthenticatedRoute>
                 )}
                 <AuthenticatedRoute path={'/'}>
