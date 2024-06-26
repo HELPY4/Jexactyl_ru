@@ -58,10 +58,10 @@ export default () => {
                         </Spinner.Suspense>
                     </AuthenticatedRoute>
                 )}
-                {tickets && (
+                {announcements && (
                     <AuthenticatedRoute path={'/announcements'}>
                         <Spinner.Suspense>
-                            <TicketRouter />
+                            <AnnouncementsRouter />
                         </Spinner.Suspense>
                     </AuthenticatedRoute>
                 )}
