@@ -6,7 +6,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useStoreActions, useStoreState } from 'easy-peasy';
 
 const BarFill = styled.div`
-    ${tw`h-full bg-green-400 {/*animate-pulse*/}`};
+    ${tw`h-full bg-green-400 /*animate-pulse*/`};
     transition: 500ms ease-in-out;
 `;
 
