@@ -60,7 +60,7 @@ export default () => {
                 )}
                 {tickets && (
                     <AuthenticatedRoute path={'/announcements'}>
-                        <AnnouncementsRouter />
+                        <{AnnouncementsRouter} />
                     </AuthenticatedRoute>
                 )}
                 <AuthenticatedRoute path={'/'}>
