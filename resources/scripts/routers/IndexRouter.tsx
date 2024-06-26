@@ -1,4 +1,3 @@
-// Пельмени
 import React from 'react';
 import { useStoreState } from '@/state/hooks';
 import { ServerContext } from '@/state/server';
@@ -56,6 +55,13 @@ export default () => {
                     <AuthenticatedRoute path={'/tickets'}>
                         <Spinner.Suspense>
                             <TicketRouter />
+                {tickets && (
+                    <AuthenticatedRoute path={'/announcements'}>
+                        <Spinner.Suspense>
+                            <TicketRouter />
+                        </Spinner.Suspense>
+                    </AuthenticatedRoute>
+                )}
                         </Spinner.Suspense>
                     </AuthenticatedRoute>
                 )}
