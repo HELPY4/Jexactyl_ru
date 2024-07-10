@@ -9,7 +9,6 @@ import styled from 'styled-components/macro';
 import { NavLink } from 'react-router-dom';
 import SpinnerOverlay from '@/components/elements/SpinnerOverlay';
 import SearchContainer from '@/components/dashboard/search/SearchContainer';
-import AnnouncementsRouter from '@/routers/AnnouncementsRouter';
 import ProgressBar from '@/components/elements/ProgressBar';
 
 const Navigation = styled.div`
@@ -82,12 +81,6 @@ export default () => {
                     )}
                     {tickets && (
                         <NavLink to={'/tickets'}>
-                            <Icon.HelpCircle size={20} />
-                        </NavLink>
-                    )}
-                    {tickets && (
-                        <NavLink to={'/announcements'}>
-{/*Сейчас иконка тикетов вместо нужной*/}
                             <Icon.HelpCircle size={20} />
                         </NavLink>
                     )}
