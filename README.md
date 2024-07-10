@@ -51,19 +51,19 @@
 2) Создайте бэкап сервера! За все следущие действия отвечаете только Вы.
 3) Скопируйте репозиторий в Вашу папку с установленным Jexactyl (обычно это /var/www/jexactyl):
 
-`sudo apt install git` Установка git (это действие нужно выполнить один раз)
+`sudo apt install git` Установка git (если не установлен)
 
-`cd /var/www/jexactyl` Перемещение в папку Jexactyl
+`cd /var/www/jexactyl` Перемещение в папку Jexactyl. У Вас может быть другой путь до папки панели.
 
-`git clone https://github.com/HELPY4/Jexactyl_ru` Копирование перевода в папку Jexactyl_ru
+`git clone https://github.com/HELPY4/Jexactyl_ru` Копирование перевода в папку `/var/www/jexactyl/Jexactyl_ru`
 
 `cd Jexactyl_ru` Перемещение в папку Jexactyl_ru (здесь можно написать `cd J` и нажать Tab)
 
 `sudo cp -r * /var/www/jexactyl` Копирование файлов. `-r` копирует все файлы и папки, что находятся в текущей папке. **Важно:** не удаляйте *, иначе все файлы в /var/www/jexactyl будут удалены (случайно проверено автором перевода).
 
-`cd ..` Возвращение в /var/www/jexactyl
+`cd ..` Возвращение в `/var/www/jexactyl`
 
-`sudo rm -r Jexactyl_ru` Удаление папки Jexactyl_ru. Это нужно сделать для избежания ошибки git во время копирования перевода "Папка Jexactyl_ru уже существует и не пуста".
+`sudo rm -r Jexactyl_ru` Удаление папки Jexactyl_ru. Это нужно сделать для избежания ошибки git во время следующего копирования перевода "Папка Jexactyl_ru уже существует и не пуста".
 
 4) Установите yarn (см. docs.jexactyl.com), но не "билдьте" панель.
 5) `sudo yarn build:production`
