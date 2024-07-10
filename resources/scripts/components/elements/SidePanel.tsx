@@ -8,7 +8,6 @@ import { NavLink, Link } from 'react-router-dom';
 import ProgressBar from '@/components/elements/ProgressBar';
 import Tooltip from '@/components/elements/tooltip/Tooltip';
 import SearchContainer from '@/components/dashboard/search/SearchContainer';
-import AnnouncementsRouter from '@/routers/AnnouncementsRouter';
 
 export default () => {
     const logo = useStoreState((state) => state.settings.data?.logo);
@@ -81,15 +80,6 @@ export default () => {
                 {tickets && (
                     <NavLink to={'/tickets'} className={'navigation-link'}>
                         <Tooltip placement={'bottom'} content={'Tickets'}>
-                            <div className={'bg-gray-700 rounded-lg p-2 my-8'}>
-                                <Icon.HelpCircle size={32} />
-                            </div>
-                        </Tooltip>
-                    </NavLink>
-                )}
-                {tickets && (
-                    <NavLink to={'/announcements'} className={'navigation-link'}>
-                        <Tooltip placement={'bottom'} content={'Announcements'}>
                             <div className={'bg-gray-700 rounded-lg p-2 my-8'}>
                                 <Icon.HelpCircle size={32} />
                             </div>
