@@ -66,6 +66,4 @@
 
 4) Установите yarn (см. docs.jexactyl.com), но не "билдьте" панель.
 5) `sudo yarn build:production`
-6) Теперь нужно установить несколько новых фич. Для этого выполните `php artisan migrate`.
-7) ```php artisan route:clear && php artisan cache:clear && php artisan view:clear```
-8) Если при входе в панель Вы получаете ошибку 500, почините права на файлы.
+6) Если при входе в панель Вы получаете ошибку 500, почините права на файлы.
