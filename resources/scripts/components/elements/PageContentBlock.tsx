@@ -53,7 +53,7 @@ const PageContentBlock: React.FC<PageContentBlockProps> = ({
                     </p>
                     <p css={tw`text-neutral-500 sm:float-right`}>
                         <a href={'https://jexactyl.com'}> Сайт и</a>
-                        // *&bull; Это точка
+                        //&bull; Это точка
                         <a href={'https://github.com/jexactyl/jexactyl'}> GitHub оригинальной панели</a>
                     </p>
                     <p css={tw`text-neutral-500 sm:float-right`}>
