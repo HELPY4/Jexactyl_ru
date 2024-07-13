@@ -52,9 +52,12 @@ const PageContentBlock: React.FC<PageContentBlockProps> = ({
                         <a href={'https://pterodactyl.io'}>Pterodactyl.</a>
                     </p>
                     <p css={tw`text-neutral-500 sm:float-right`}>
-                        <a href={'https://jexactyl.com'}> Site </a>
-                        &bull;
-                        <a href={'https://github.com/jexactyl/jexactyl'}> GitHub </a>
+                        <a href={'https://jexactyl.com'}> Сайт и</a>
+                        /*&bull;*/
+                        <a href={'https://github.com/jexactyl/jexactyl'}> GitHub оригинальной панели</a>
+                    </p>
+                    <p css={tw`text-neutral-500 sm:float-right`}>
+                        <a href={'https://github.com/HELPY4/Jexactyl_ru'}> GitHub перевода </a>
                     </p>
                 </ContentContainer>
             </div>
