@@ -168,7 +168,7 @@ const FileDropdownMenu = ({ file }: { file: FileObject }) => {
                     </Can>
                 ) : (
                     <Can action={'file.archive'}>
-                        <Row onClick={doArchive} title={'В архив.tar.gz'} />
+                        <Row onClick={doArchive} title={'В архив'} />
                     </Can>
                 )}
                 {file.isFile && <Row onClick={doDownload} title={'Скачать (быстро)'} />}
